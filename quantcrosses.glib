@@ -1,0 +1,24 @@
+##OpenGL GLIB
+Perspective 70
+LookAt  0 0 5     0 0 0    0 1 0
+
+Vertex   quantcrosses.vert
+Geometry quantcrosses.geom
+Fragment quantcrosses.frag
+Program QuantCrosses 				\
+	uLevel <0 1 3>				\
+	uQuantize <2. 50. 50.>			\
+	uSize <0.0001 0.01 0.1>			\
+	uColor { 0.8 1.0 1.0 1.0 }		\
+	uLightX <-20.  0. 20.>			\
+	uLightY <-20. 20. 20.>			\
+	uLightZ <-20. 20. 20.>			\
+	uKa <0. 0.05 1.0>			\
+	uKd <0. 0.6 1.0>			\
+	uKs <0. 0.5 1.0>			\
+	uShininess <2. 10. 50.>     \
+    uUseChromaDepth <true>                      \
+    uRedDepth <0. 1. 5.>                         \
+    uBlueDepth <0. 4.4 10.>
+
+Obj cow.obj
